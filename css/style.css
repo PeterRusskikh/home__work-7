@@ -1,0 +1,140 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: local('Gilroy'),
+		 url('../fonts/Gilroy-Medium.ttf') format('truetype'),
+		 url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Gilroy-Medium.woff') format('woff'); 
+	font-weight: 500;
+	font-style: normal;
+  }
+  @font-face {
+	font-family: 'Gilroy';
+	src: local('Gilroy'),
+		 url('../fonts/Gilroy-Bold.ttf') format('truetype'),
+		 url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Gilroy-Bold.woff') format('woff'); 
+	font-weight: 700;
+	font-style: normal;
+  }
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	color: #000;
+	font-family: 'Gilroy';
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+._container {
+	max-width: 946px;
+	margin: 0 auto;
+	min-height: 100%;
+	padding: 5px;
+	
+}
+/*-----------Общие стилли-------------------------------*/
+.section-name {
+	font-size: 34px;
+	line-height: calc(42/32*100%);
+	text-align: center;
+	font-weight: 700;
+}
+.portfolio-name {
+	font-size: 18px;
+	line-height: calc(22/18*100%);
+	text-align: center;
+	font-weight: 500;
+}
+/*-----------header__nav-------------------------------*/
+.header__nav-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 88px;
+}
+.header__nav-menu li a {
+	font-size: 18px;
+	line-height: calc(22/18*100%);
+	font-weight: 700;
+	color: #828282;
+}
+.header__nav-menu li a:hover{
+	color: black;
+}
+/*-----------header__home-------------------------------*/
+
+.header__home {
+	display: flex;
+	max-width: 946px;
+	border: 2px solid #828282;
+	
+}
+.header__home-info {
+	margin-left: calc(127/946*100%);
+	margin-top: 100px;
+	max-width: 205px;
+
+}
+.header__home-name {
+	font-size: 47px;
+	line-height: 47px;
+	font-weight: 700;
+}
+.header__home-job {
+	font-size: 20px;
+	line-height: 20px;
+	margin-top: calc(79/946*100%);
+}
+.header__home-img {
+	margin-left: calc(63/946*100%);
+	background-image: url(/img/my-photo.png);
+	background-repeat: no-repeat;
+	width: 550px;
+	height: 550px;
+	background-size: cover;
+	
+}
+
